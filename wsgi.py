@@ -5,6 +5,8 @@ from flask.cli import with_appcontext, AppGroup
 from App.database import create_db
 from App.main import app, migrate
 from App.controllers import ( create_user, get_all_users_json, get_all_users )
+from App.models import Word
+import csv
 
 # This commands file allow you to create convenient CLI commands
 # for testing controllers
@@ -12,6 +14,10 @@ from App.controllers import ( create_user, get_all_users_json, get_all_users )
 # This command creates and initializes the database
 @app.cli.command("init", help="Creates and initializes the database")
 def initialize():
+    with open('words.csv', newline = '') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            print(row)
     create_db(app)
     print('database intialized')
 
