@@ -1,0 +1,7 @@
+{% extends "layout.html"%}
+{% block title %}View Words{% endblock %}
+{% block content %}
+    {% for item in values %}
+        <p> Word #: {{item.word_num}}, Difficulty: {{item.difficulty}}, Word: {{item.word}}</p>
+    {% end for %}
+{% endblock %}

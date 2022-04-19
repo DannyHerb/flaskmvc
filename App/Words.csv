@@ -1,4 +1,4 @@
-Word_num,Word,Difficulty
+﻿Word_num,Word,Difficulty
 1,Profligacy,hard
 2,Abhorrent,intermediate
 3,Hubris,intermediate
@@ -13,7 +13,7 @@ Word_num,Word,Difficulty
 12,Incendiary,intermediate
 13,Provenance,intermediate
 14,Technology,easy
-15,Accessory,easy 
+15,Accessory,easy
 16,Handle,easy
 17,Ability,easy
 18,Conscientiousness,hard

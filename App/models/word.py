@@ -1,4 +1,5 @@
 from App.database import db
+import csv
 
 class Word(db.Model):
     word_num = db.Column(db.Integer, primary_key = True)
@@ -11,3 +12,8 @@ def toDict(self):
             'difficulty': self.difficulty,
             'word' : self.word
         }
+
+with open('Words.csv', newline = '') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in  reader:
+        print(row)
