@@ -7,6 +7,7 @@ from App.main import app, migrate
 from App.controllers import ( create_user, get_all_users_json, get_all_users )
 from App.models import Word
 import csv
+from App.database import db
 
 # This commands file allow you to create convenient CLI commands
 # for testing controllers
@@ -55,7 +56,14 @@ app.cli.add_command(user_cli) # add the group to the cli
 '''
 Generic Commands
 '''
+with open('Words.csv', newline = '') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        words = Word(word = row['Word'], difficulty = row['Difficulty'])
+        db.session.add(words)
+    db.session.commit()
 
+    
 
 @app.cli.command("init")
 def initialize():

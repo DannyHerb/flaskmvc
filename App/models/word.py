@@ -13,7 +13,3 @@ def toDict(self):
             'word' : self.word
         }
 
-with open('Words.csv', newline = '') as csvfile:
-    reader = csv.DictReader(csvfile)
-    for row in  reader:
-        print(row)
