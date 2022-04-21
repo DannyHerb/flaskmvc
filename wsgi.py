@@ -13,14 +13,8 @@ from App.database import db
 # for testing controllers
 
 # This command creates and initializes the database
-@app.cli.command("init", help="Creates and initializes the database")
-def initialize():
-    with open('words.csv', newline = '') as csvfile:
-        reader = csv.DictReader(csvfile)
-        for row in reader:
-            print(row)
-    create_db(app)
-    print('database intialized')
+
+
 
 '''
 User Commands
@@ -56,16 +50,14 @@ app.cli.add_command(user_cli) # add the group to the cli
 '''
 Generic Commands
 '''
-with open('Words.csv', newline = '') as csvfile:
-    reader = csv.DictReader(csvfile)
-    for row in reader:
-        words = Word(word = row['Word'], difficulty = row['Difficulty'])
-        db.session.add(words)
-    db.session.commit()
-
-    
-
-@app.cli.command("init")
+  
+@app.cli.command("init", help="Creates and initializes the database")
 def initialize():
+    with open('Words.csv', newline = '') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            words = Word(word = row['Word'], difficulty = row['Difficulty'])
+            db.session.add(words)
+        db.session.commit()
     create_db(app)
     print('database intialized')
