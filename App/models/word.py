@@ -6,10 +6,9 @@ class Word(db.Model):
     difficulty = db.Column(db.String, nullable = False)
     word = db.Column(db.String, nullable = False)
 
-def toDict(self):
+    def toDict(self):
         return{
             'word_num': self.word_num,
             'difficulty': self.difficulty,
             'word' : self.word
         }
-

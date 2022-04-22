@@ -2,7 +2,18 @@
 {% block title %}View Words{% endblock %}
 {{ super() }}
 {% block content %}
-    {% for item in values %}
-        <p> Word #: {{item.word_num}}, Difficulty: {{item.difficulty}}, Word: {{item.word}}</p>
-    {% end for %}
+    
+    <table>
+        <tr>
+          <th>Word</th>
+          <th>Difficulty</th>
+        </tr>
+        {% for Word in words %}
+        <tr>
+          <td>{{Word.word}}</td>
+          <td>{{Word.difficulty}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    
 {% endblock %}
