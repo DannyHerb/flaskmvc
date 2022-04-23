@@ -16,4 +16,4 @@ def start_game(amount):
     return random_word
 
 def check_word():
-    words = Word
+    words = Word.query.all()

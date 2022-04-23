@@ -5,10 +5,12 @@ class Word(db.Model):
     word_num = db.Column(db.Integer, primary_key = True)
     difficulty = db.Column(db.String, nullable = False)
     word = db.Column(db.String, nullable = False)
+    hint = db.Column(db.String, nullable = True)
 
     def toDict(self):
         return{
             'word_num': self.word_num,
             'difficulty': self.difficulty,
-            'word' : self.word
+            'word' : self.word,
+            'hint' : self.hint
         }

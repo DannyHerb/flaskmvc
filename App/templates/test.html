@@ -7,11 +7,13 @@
         <tr>
           <th>Word</th>
           <th>Difficulty</th>
+          <th>Hint</th>
         </tr>
         {% for Word in words %}
         <tr>
           <td>{{Word.word}}</td>
           <td>{{Word.difficulty}}</td>
+          <td>{{Word.hint}}</td>
         </tr>
         {% endfor %}
       </table>

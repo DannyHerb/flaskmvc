@@ -9,6 +9,7 @@ from App.controllers import (
     get_all_users_json,
     get_all_words_json,
     start_game,
+    check_word,
 )
 
 user_views = Blueprint('user_views', __name__, template_folder='../templates')
@@ -37,4 +38,3 @@ def test():
     words = start_game(1)
     #words = Word.query.all()
     return render_template('test.html', words = words)
-

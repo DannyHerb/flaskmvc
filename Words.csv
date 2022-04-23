@@ -1,31 +1,31 @@
-﻿Word_num,Word,Difficulty
-1,Profligacy,hard
-2,Abhorrent,intermediate
-3,Hubris,intermediate
-4,Brittle,easy
-5,Diligent,easy
-6,Innovative,intermediate
-7,Dependable,easy
-8,Mythological,hard
-9,Putative,hard
-10,Conventional,intermediate
-11,Egregious,hard
-12,Incendiary,intermediate
-13,Provenance,intermediate
-14,Technology,easy
-15,Accessory,easy
-16,Handle,easy
-17,Ability,easy
-18,Conscientiousness,hard
-19,Prescient,hard
-20,Ephemeral,intermediate
-21,Ostracism,hard
-22,Philanthropic,hard
-23,Choir,easy
-24,Building,easy
-25,Defibrillator,hard
-26,Purse,easy
-27,Trifling,intermediate
-28,Ubiquitous,hard
-29,Vocabulary,intermediate
-30,Enormity,intermediate
+﻿Word_num,Word,Difficulty,Hint
+1,Profligacy,hard,P_ _ f_ _ g _ _ y
+2,Abhorrent,intermediate,_ b _ o _ _ e _ _
+3,Hubris,intermediate,_ u b _ _ _ 
+4,Brittle,easy,B _ _ _ _ l e
+5,Diligent,easy,D _ _ _ g _ n _
+6,Innovative,intermediate,_ _ _ o _ a t _ _ _ 
+7,Dependable,easy,_ _ _ e n _ _ _ l e
+8,Mythological,hard,_ _ _ _ o _ _ _ i _ _ l
+9,Putative,hard,_ _ t a t _ _ _ 
+10,Conventional,intermediate,C _ _ _ e _ t i _ _ _ _ 
+11,Egregious,hard,_ g r _ _ _ _ u s 
+12,Incendiary,intermediate,_ _ c _ _ d i _ _ y
+13,Provenance,intermediate,_ r o _ _ _ a _ _ e
+14,Technology,easy,T e _ _ _ o _ _ g _ 
+15,Accessory,easy,_ c c _ s _ _ _ y 
+16,Handle,easy,_ _ _ d l  e
+17,Ability,easy,A _ _ l i _ _   
+18,Conscientiousness,hard,_ _ _ s c _ _ _ t i _ _ _ n _ _ s
+19,Prescient,hard,P _ _ s c _ _ _ t 
+20,Ephemeral,intermediate,_ _ _ e m _ _ a l
+21,Ostracism,hard,_ s t _ _ _ i _ m 
+22,Philanthropic,hard,P _ _ _ a n _ _ _ o _ _ c
+23,Choir,easy,C _ _ _  r
+24,Building,easy,_ u i _ _ _ n _ 
+25,Defibrillator,hard,_ e f _ _ _ i l _ _ t o  _
+26,Purse,easy,P _  _ s _
+27,Trifling,intermediate,_ _ _ f  l _ _ g
+28,Ubiquitous,hard,U b _ _ _  i t _ _ _ 
+29,Vocabulary,intermediate,_ _ _ _ b u l _  _ y
+30,Enormity,intermediate, _ _ o _ _ i  _ y

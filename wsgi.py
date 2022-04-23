@@ -56,7 +56,7 @@ def initialize():
     with open('Words.csv', newline = '') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            words = Word(word = row['Word'], difficulty = row['Difficulty'])
+            words = Word(word = row['Word'], difficulty = row['Difficulty'], hint = row['Hint'])
             db.session.add(words)
         db.session.commit()
     create_db(app)
