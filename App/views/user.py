@@ -35,6 +35,6 @@ def static_user_page():
 
 @user_views.route('/words')
 def test():
-    words = start_game(1)
-    #words = Word.query.all()
+    #words = start_game(1)
+    words = Word.query.all()
     return render_template('test.html', words = words)
